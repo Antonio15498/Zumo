@@ -21,12 +21,12 @@ public class Main {
 
    
 
-        acciones_Zumo(unDeposito);
+        acciones_Zumo(unDeposito, null);
         relleno = unDeposito.obtenerLitros();
         System.out.println("El depósito contiene " + relleno + " litros");
     }
 
-    public static void acciones_Zumo(Zumo unDeposito) {
+    public static void acciones_Zumo(Zumo unDeposito, java.lang.Double peso) {
         try {
             System.out.println("Vamos a tomar zumo");
             unDeposito.sacarZumo(5, 20);//Se intentan comprar 5 litros de zumo con 20€
